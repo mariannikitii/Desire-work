@@ -7,7 +7,8 @@
 	<title>Document</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,7 +22,7 @@
 					<nav class="menu">
 						<ul class="menu__list">
 							<li class="menu__list-item">
-								<a class="menu__list-link" href="">About</a>
+								<a class="menu__list-link menu__list-link--active" href="">About</a>
 							</li>
 							<li class="menu__list-item">
 								<a class="menu__list-link" href="">Gallery</a>
@@ -43,22 +44,84 @@
 						<img src="./images/icon_menu.svg" alt="icon menu">
 					</button>
 					<div class="rightsite-menu rightsite-menu--close">
-          <button class="rightsite-menu__close">
-            <img src="./images/raghtsite-close.svg" alt="button">
-          </button>
-          <div class="rightsite-menu__content">  <a class="rightsite-menu__logo" href="">
-            <img src="./images/raghtsite-logo.png" alt="big logo">
-          </a>
-          <h4 class="rightsite-menu__title">Furniture for life</h4>
-          <p class="rightsite-menu__text">Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1&nbsp;art party microdosing, put a&nbsp;bird on&nbsp;it&nbsp;brooklyn</p>
-       <img class="rightsite-menu__images" src="./images/raghtsite-content.png" alt="images">
-        </div>
-        
-        </div>
+						<button class="rightsite-menu__close">
+							<img src="./images/raghtsite-close.svg" alt="button">
+						</button>
+						<div class="rightsite-menu__content"> <a class="rightsite-menu__logo" href="">
+								<img src="./images/raghtsite-logo.png" alt="big logo">
+							</a>
+							<h4 class="rightsite-menu__title">Furniture for life</h4>
+							<p class="rightsite-menu__text">Sustainable hot chicken skateboard, dreamcatcher meggings actually squid.
+								Slow-carb everyday carry +1&nbsp;art party microdosing, put a&nbsp;bird on&nbsp;it&nbsp;brooklyn</p>
+							<img class="rightsite-menu__images" src="./images/raghtsite-content.png" alt="images">
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</header>
-		<main class="main"></main>
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Home</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="about">
+				<div class="about__prev">
+					<div class="container">
+						<h2 class="about__prev-title">About Us</h2>
+					</div>
+				</div>
+				<div class="about__content">
+					<div class="container">
+						<h3 class="about__title">Balance in&nbsp;the simple through an&nbsp;informed marriage of&nbsp;design,
+							functional and craft</h3>
+						<div class="about__text">
+							<p class="about__text-content">Vexillologist vape microdosing freegan pork belly deep v direct trade cray
+								single-origin coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper
+								mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock chillwave literally
+								post-ironic ramps subway tile kitsch. Shaman tumblr fixie echo park street art. Enamel pin vaporware
+								wayfarers, organic succulents hella sustainable cardigan.
+
+							</p>
+							<p class="about__text-content">Sustainable hot chicken skateboard, dreamcatcher meggings actually squid.
+								Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn tilde distillery pork belly
+								single-origin coffee tumblr quinoa copper mug. Affogato cold-pressed unicorn, viral intelligentsia
+								leggings raw denim kombucha tote bag messenger bag chambray vape coloring book scenester. Activated
+								charcoal wayfarers church-key tote bag synth brunch. Retro cornhole</p>
+						</div>
+					</div>
+				</div>
+				<div class="about__popup">
+					<a class="about__popup-play" data-fancybox href="https://www.youtube.com/watch?v=Wp8yxAqZous">
+						<img class="about__popup-imgbtn" src="./images/play-button.svg" alt="play button"></a>
+
+				</div>
+			</section>
+
+			<section class="inspiration">
+				<div class="container-fluid">
+					<div class="inspiration__inner">
+						<img class="inspiration__images" src="./images/inspiration-decor.png" alt="images">
+						<div class="inspiration__content">
+							<h3 class="inspiration__title">Our Inspiration in&nbsp;details</h3>
+							<p class="inspiration__text">Semiotics fixie four dollar toast, next level woke scenester direct trade
+								photo booth helvetica jean shorts. Fanny pack church-key cornhole, banh mi&nbsp;thundercats gochujang
+								keytar.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="footer__content">
 				<div class="container">
