@@ -82,25 +82,7 @@
 		margin-bottom: 16px;
 	}
 
-	&__info-email {
-		position: relative;
-		display: inline-block;
-		margin-bottom: 22px;
-		padding-left: 30px;
-    font-weight: 600;
-		font-size: 14px;
-		color: $title;
-		&::before {
-			position: absolute;
-			content: '';
-			background-image: url(../images/envelope.svg);
-			background-repeat: no-repeat;
-			width: 16px;
-			height: 16px;
-			left: 0;
-			top: 8px;
-		}
-	}
+
 
 	&__form {
 		display: flex;
@@ -275,6 +257,8 @@
 .breadcrumbs {
 	padding: 13px 0 14px;
 	background: rgba(#DFDFDF, .5);
+	position: relative;
+	z-index: 999;
   &__list {
 		display: flex;
 	}
@@ -758,7 +742,7 @@
 			position: absolute;
 			content: '';
 			width: 200px;
-			height: 1px;
+			height: 2px;
 			bottom: 0;
 			left: 0;
 			background: #6D7278;
@@ -804,4 +788,103 @@
 		margin: 0 auto;
 	}
 }
+
+.map {
+	margin-top: -53px;
+	margin-bottom: 50px;
+}
+
+.contact {
+	margin-bottom: 100px;
+	&__title {
+		position: relative;
+		padding-bottom: 39px;
+		margin-bottom: 38px;
+		color: $title;
+		@extend %title-font;
+		font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+		&::after {
+			position: absolute;
+			content: '';
+			width: 200px;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background: #6D7278;
+
+		}
+	}
+  .contact__social {
+		padding-left: 284px;
+		display: flex;
+		margin-bottom: 20px;
+	}
+  &__social-item + .contact__social-item {
+  padding-left: 40px;
+	}
+	&__box {
+		padding-left: 284px;
+	}
+	&__text {
+  margin-bottom: 10px;
+	}
+  &__phone {
+		color: $default;
+	}
+
+  &__city {
+		margin-bottom: 16px;
+	}
+  &__form {
+		padding-left: 284px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+  &__form-input {
+		padding: 6px 17px;
+		margin-bottom: 13px;
+		max-width: 407px;
+		width: 49%;
+		border-radius: 20px;
+		border: 1px solid #DFDFDF;
+		&::placeholder {
+			color: #A1A1A1;
+      font-size: 16px;
+      font-family: Open Sans;
+      font-weight: 400;
+      line-height: 28px;
+			font-family: 'Open Sans', sans-serif;    
+		}
+	}
+  &__form-area {
+		padding: 14px 17px;
+		width: 100%;
+		border-radius: 24px;
+		border: 1px solid #DFDFDF;
+		min-height: 125px;
+		resize: none;
+		margin-bottom: 20px;
+		&::placeholder {
+			color: #A1A1A1;
+      font-size: 16px;
+      font-family: Open Sans;
+      font-weight: 400;
+      line-height: 28px;
+			font-family: 'Open Sans', sans-serif; 
+			
+	}}
+  &__form-btn {
+		border: none;
+		background-color: $title;
+		border-radius: 21px;
+		padding: 6px 60px;
+    height: 40px;
+	  color: #FFFFF0;
+		cursor: pointer;
+	}
+}
+
 

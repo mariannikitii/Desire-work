@@ -62,7 +62,25 @@ body {
 	}
 }
 
-
+.info-email {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	font-weight: 600;
+	font-size: 14px;
+	color: $title;
+	&::before {
+		position: absolute;
+		content: '';
+		background-image: url(../images/envelope.svg);
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		left: 0;
+		top: 8px;
+	}
+}
 
 
 
