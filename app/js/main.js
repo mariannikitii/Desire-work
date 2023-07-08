@@ -21,6 +21,8 @@ $(function () {
 	arrows: false,
  });
 
+ var player = videojs('my-video');
+ player.controlBar.addChild('VolumeMenuButton');
  var mixer = mixitup('.gallery__inner', {
 	load: {
 		filter: '.category-living'
